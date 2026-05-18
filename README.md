@@ -18,8 +18,8 @@
 1. Clone the repo and install dependencies:
 
     ```bash
-    git clone <repo-url> my-project
-    cd my-project
+    git clone https://github.com/captainmio/catch-design-backend
+    cd catch-design-backend
     npm install
     ```
 
