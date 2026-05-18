@@ -1,0 +1,41 @@
+{
+  "name": "be-dev-test",
+  "version": "1.0.0",
+  "description": "A simple test for Backend developers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "import:customers": "ts-node src/services/csv-import.service.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catch-design/be-dev-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/catch-design/be-dev-test/issues"
+  },
+  "homepage": "https://github.com/catch-design/be-dev-test#readme",
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.29",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  }
+}
